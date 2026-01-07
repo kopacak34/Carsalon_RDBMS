@@ -20,6 +20,8 @@ def menu():
     print("4 - Vytvořit objednávku")
     print("5 - Import dat")
     print("6 - Report objednávek")
+    print("7 - Smazat zákazníka")
+    print("8 - Smazat auto")
     print("0 - Konec")
 
 while True:
@@ -55,6 +57,20 @@ while True:
         elif volba == "6":
             for r in report_service.order_totals():
                 print(r)
+
+        elif volba == "7":
+            customer_id = int(input("ID zákazníka ke smazání: "))
+            if customer_repo.delete(customer_id):
+                print("Zákazník smazán")
+            else:
+                print("Zákazníka nelze smazat")
+
+        elif volba == "8":
+            car_id = int(input("ID auta ke smazání: "))
+            if car_repo.delete(car_id):
+                print("Auto smazáno")
+            else:
+                print("Auto nelze smazat")
 
         elif volba == "0":
             break

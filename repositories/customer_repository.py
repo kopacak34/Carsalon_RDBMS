@@ -19,3 +19,21 @@ class CustomerRepository:
         data = cur.fetchall()
         conn.close()
         return data
+
+    def delete(self, customer_id):
+        conn = get_connection()
+        cur = conn.cursor()
+        try:
+            cur.execute(
+                "DELETE FROM customer WHERE id = %s",
+                (customer_id,)
+            )
+            conn.commit()
+            return cur.rowcount > 0
+        except Exception as e:
+            conn.rollback()
+            print("Nelze smazat zákazníka:", e)
+            return False
+        finally:
+            conn.close()
+
