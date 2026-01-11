@@ -1,0 +1,72 @@
+[
+  {
+    "brand": "Škoda",
+    "model": "Octavia Combi",
+    "price": 540000,
+    "fuel": "petrol",
+    "available": true
+  },
+  {
+    "brand": "Volkswagen",
+    "model": "Passat",
+    "price": 720000,
+    "fuel": "diesel",
+    "available": true
+  },
+  {
+    "brand": "BMW",
+    "model": "330i",
+    "price": 1050000,
+    "fuel": "petrol",
+    "available": true
+  },
+  {
+    "brand": "Audi",
+    "model": "A6",
+    "price": 1150000,
+    "fuel": "diesel",
+    "available": false
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "C220d",
+    "price": 1100000,
+    "fuel": "diesel",
+    "available": true
+  },
+  {
+    "brand": "Toyota",
+    "model": "RAV4 Hybrid",
+    "price": 890000,
+    "fuel": "petrol",
+    "available": true
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Tucson",
+    "price": 760000,
+    "fuel": "petrol",
+    "available": true
+  },
+  {
+    "brand": "Kia",
+    "model": "Sportage",
+    "price": 740000,
+    "fuel": "petrol",
+    "available": true
+  },
+  {
+    "brand": "Tesla",
+    "model": "Model Y",
+    "price": 1350000,
+    "fuel": "electric",
+    "available": true
+  },
+  {
+    "brand": "Mazda",
+    "model": "CX-5",
+    "price": 820000,
+    "fuel": "petrol",
+    "available": false
+  }
+]
